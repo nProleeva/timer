@@ -1,7 +1,7 @@
 {
 	"name": "Timer",
 	"version": "1.0.0",
-	"discription": "",
+	"discription": "3 timer(5seconds,10seconds,15seconds), start, pause, reset",
 	"main": "script.js",
 	"babel": {
 		"presets": [
