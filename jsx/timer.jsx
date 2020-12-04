@@ -1,3 +1,7 @@
+const React = require('react')
+const ReactDOM = require('react-dom')
+const Button = require('./button.jsx')
+
 const Text = (props) => <p>{props.timer? "Time Left:" + props.timer:"Timer not running"}</p>
 class TimerWrapper extends React.Component {
 	constructor(props) {
@@ -62,3 +66,5 @@ class TimerWrapper extends React.Component {
 		</div>
 	}
 }
+
+module.exports = TimerWrapper;

@@ -1,3 +1,6 @@
+const React = require('react')
+const ReactDOM = require('react-dom')
+
 class Button extends React.Component {
 	constructor(props) {
 		super(props);
@@ -10,3 +13,4 @@ class Button extends React.Component {
 		return <button onClick={this.startTimer}>{this.props.timer} seconds</button>
 	}
 }
+module.exports = Button;
