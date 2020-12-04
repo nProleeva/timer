@@ -1,0 +1,7 @@
+$marginButton: 0 0.5rem;
+button {
+	margin:$marginButton;
+}
+button:first-child, p + button {
+	margin-left: 0;
+}
