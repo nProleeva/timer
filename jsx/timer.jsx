@@ -1,6 +1,7 @@
 const React = require('react')
 const ReactDOM = require('react-dom')
 const Button = require('./button.jsx')
+const InputTimer = require('./input.jsx')
 
 const Text = (props) => <p>{props.timer? "Time Left:" + props.timer:"Timer not running"}</p>
 class TimerWrapper extends React.Component {
@@ -59,9 +60,9 @@ class TimerWrapper extends React.Component {
 			<Button timer="5" startTimer={this.startTimer}/>
 			<Button timer="10" startTimer={this.startTimer}/>
 			<Button timer="15" startTimer={this.startTimer}/>
+			<InputTimer startTimer={this.startTimer} />
 			<Text timer={this.state.timeLeft}/>
 			<button onClick={this.pause}>Pause/Resume</button>
-			<button onClick={this.cancel}>Cancel Timer</button>
 			<button onClick={this.reset}>Reset</button>
 		</div>
 	}
