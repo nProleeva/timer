@@ -18,7 +18,7 @@ class InputTimer extends React.Component {
 	handler(event) {
 		this.setState((state)=>{
 			return { 
-				timer: state.timer.lenght?event.target.value.replace(/[^0-9]/ig,''):event.target.value.replace(/[^1-9]/ig,'')
+				timer: state.timer.length?event.target.value.replace(/[^0-9]/ig,''):event.target.value.replace(/[^1-9]/ig,'')
 			}
 		});
 	}
